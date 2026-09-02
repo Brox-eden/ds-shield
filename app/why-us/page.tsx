@@ -1,0 +1,38 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { differentiators } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Why DSS | Digital Solutions Shield",
+};
+
+export default function WhyUsPage() {
+  return (
+    <>
+      <section className="bg-forest text-cream">
+        <div className="section">
+          <p className="eyebrow text-gold-light">Difference</p>
+          <h1 className="mt-3 font-heading text-4xl font-semibold">Why Digital Solutions Shield?</h1>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="grid gap-6 sm:grid-cols-2">
+          {differentiators.map((d) => (
+            <div key={d.number} className="card">
+              <span className="font-heading text-sm text-gold-dark">{d.number}</span>
+              <h2 className="mt-2 font-heading text-xl font-semibold">{d.title}</h2>
+              <p className="mt-2 text-sm text-forest/70">{d.description}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link href="/contact" className="btn-primary inline-flex">
+            Book a Consultation
+          </Link>
+        </div>
+      </section>
+    </>
+  );
+}
