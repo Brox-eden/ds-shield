@@ -12,7 +12,7 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-forest/10 bg-cream/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
         <Link href="/" className="flex items-center gap-3">
-          <Image src="/images/logo-header.png" alt="Digital Solutions Shield" width={213} height={64} priority className="h-14 w-auto sm:h-16" />
+          <Image src="/images/logo-header.png" alt="Digital Solutions Shield" width={123} height={64} priority className="h-14 w-auto sm:h-16" />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
