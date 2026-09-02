@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/content";
 
+export const dynamic = "force-static";
+
 const baseUrl = `https://${site.domain}`;
 
 const routes = [
