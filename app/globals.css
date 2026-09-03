@@ -17,7 +17,16 @@ body {
 
 p {
   text-align: justify;
-  text-align-last: left;
+  text-align-last: start;
+}
+
+[dir="rtl"] {
+  font-family: var(--font-arabic), system-ui, sans-serif;
+}
+
+[dir="rtl"] .font-heading,
+[dir="rtl"] .font-body {
+  font-family: var(--font-arabic), system-ui, sans-serif;
 }
 
 @layer components {
@@ -30,11 +39,11 @@ p {
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-md bg-forest px-6 py-3 font-heading text-sm font-semibold uppercase tracking-wide text-cream transition hover:bg-forest-light dark:bg-gold dark:text-forest-dark dark:hover:bg-gold-light;
+    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md bg-forest px-6 py-3 font-heading text-sm font-semibold uppercase tracking-wide text-cream transition hover:bg-forest-light dark:bg-gold dark:text-forest-dark dark:hover:bg-gold-light;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-md border border-forest px-6 py-3 font-heading text-sm font-semibold uppercase tracking-wide text-forest transition hover:bg-forest hover:text-cream dark:border-gold dark:text-gold dark:hover:bg-gold dark:hover:text-forest-dark;
+    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md border border-forest px-6 py-3 font-heading text-sm font-semibold uppercase tracking-wide text-forest transition hover:bg-forest hover:text-cream dark:border-gold dark:text-gold dark:hover:bg-gold dark:hover:text-forest-dark;
   }
 
   .card {

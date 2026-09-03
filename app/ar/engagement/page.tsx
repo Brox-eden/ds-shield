@@ -1,0 +1,52 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { engagementModels } from "@/lib/content.ar";
+
+export const metadata: Metadata = {
+  title: "نماذج التعاون | درع الحلول الرقمية",
+};
+
+export default function EngagementPageAr() {
+  return (
+    <>
+      <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
+        <div className="section">
+          <p className="eyebrow text-gold-light dark:text-forest-dark">المرونة</p>
+          <h1 className="mt-3 font-heading text-4xl font-semibold">إطار التعاون والتنفيذ</h1>
+          <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/80">
+            تعاون معنا بالطريقة التي تناسب مؤسستك: مشروع محدد، أو استشارات مستمرة، أو قدرات مدمجة.
+          </p>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="grid gap-6 md:grid-cols-3">
+          {engagementModels.map((model) => (
+            <div
+              key={model.number}
+              className={
+                model.featured
+                  ? "card bg-forest text-cream dark:bg-gold dark:text-forest-dark"
+                  : "card"
+              }
+            >
+              <span className={model.featured ? "font-heading text-sm text-gold-light dark:text-forest-dark" : "font-heading text-sm text-accent"}>
+                {model.number}
+              </span>
+              <h2 className="mt-2 font-heading text-xl font-semibold">{model.title}</h2>
+              <p className={model.featured ? "mt-3 text-sm text-cream/80 dark:text-forest-dark/80" : "mt-3 text-sm text-muted"}>
+                {model.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link href="/ar/contact" className="btn-primary inline-flex">
+            ناقش نموذج تعاونك
+          </Link>
+        </div>
+      </section>
+    </>
+  );
+}

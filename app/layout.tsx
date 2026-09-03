@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Oswald, Inter } from "next/font/google";
+import { Oswald, Inter, Tajawal } from "next/font/google";
 import "./globals.css";
-import SiteHeader from "@/components/SiteHeader";
-import SiteFooter from "@/components/SiteFooter";
 import { site } from "@/lib/content";
 
 const oswald = Oswald({
@@ -14,6 +12,12 @@ const oswald = Oswald({
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+});
+
+const tajawal = Tajawal({
+  subsets: ["arabic"],
+  weight: ["500", "700", "800"],
+  variable: "--font-arabic",
 });
 
 export const metadata: Metadata = {
@@ -45,18 +49,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" dir="ltr" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark');}catch(e){}})();`,
+            __html: `(function(){try{var t=localStorage.getItem('theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark');var isAr=location.pathname==='/ar'||location.pathname.indexOf('/ar/')===0;if(isAr){document.documentElement.lang='ar';document.documentElement.dir='rtl';}}catch(e){}})();`,
           }}
         />
       </head>
-      <body className={`${oswald.variable} ${inter.variable} flex min-h-screen flex-col`}>
-        <SiteHeader />
-        <main className="flex-1">{children}</main>
-        <SiteFooter />
+      <body className={`${oswald.variable} ${inter.variable} ${tajawal.variable} flex min-h-screen flex-col`}>
+        {children}
       </body>
     </html>
   );

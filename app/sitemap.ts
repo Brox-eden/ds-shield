@@ -18,8 +18,13 @@ const routes = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routes.map((route) => ({
+  const enRoutes = routes.map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
   }));
+  const arRoutes = routes.map((route) => ({
+    url: `${baseUrl}/ar${route}`,
+    lastModified: new Date(),
+  }));
+  return [...enRoutes, ...arRoutes];
 }
