@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <section className="bg-forest text-cream">
+      <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
         <div className="section">
-          <p className="eyebrow text-gold-light">Get in touch</p>
+          <p className="eyebrow text-gold-light dark:text-forest-dark">Get in touch</p>
           <h1 className="mt-3 font-heading text-4xl font-semibold">Book a Consultation</h1>
-          <p className="mt-4 max-w-2xl text-cream/80">
+          <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/80">
             Pick a time that works for you below and we&apos;ll confirm your consultation. (An AI
             secretary will handle this step live on the site in a later phase.)
           </p>
@@ -25,14 +25,14 @@ export default function ContactPage() {
 
         <div className="space-y-6">
           <div className="card">
-            <h2 className="font-heading text-lg font-semibold text-gold-dark">Email</h2>
-            <a href={`mailto:${site.email}`} className="mt-2 block text-forest/80 hover:underline">
+            <h2 className="font-heading text-lg font-semibold text-accent">Email</h2>
+            <a href={`mailto:${site.email}`} className="mt-2 block text-muted-strong hover:underline">
               {site.email}
             </a>
           </div>
           <div className="card">
-            <h2 className="font-heading text-lg font-semibold text-gold-dark">Website</h2>
-            <p className="mt-2 text-forest/80">{site.domain}</p>
+            <h2 className="font-heading text-lg font-semibold text-accent">Website</h2>
+            <p className="mt-2 text-muted-strong">{site.domain}</p>
           </div>
         </div>
       </section>

@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 export default function WhyUsPage() {
   return (
     <>
-      <section className="bg-forest text-cream">
+      <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
         <div className="section">
-          <p className="eyebrow text-gold-light">Difference</p>
+          <p className="eyebrow text-gold-light dark:text-forest-dark">Difference</p>
           <h1 className="mt-3 font-heading text-4xl font-semibold">Why Digital Solutions Shield?</h1>
         </div>
       </section>
@@ -20,9 +20,9 @@ export default function WhyUsPage() {
         <div className="grid gap-6 sm:grid-cols-2">
           {differentiators.map((d) => (
             <div key={d.number} className="card">
-              <span className="font-heading text-sm text-gold-dark">{d.number}</span>
+              <span className="font-heading text-sm text-accent">{d.number}</span>
               <h2 className="mt-2 font-heading text-xl font-semibold">{d.title}</h2>
-              <p className="mt-2 text-sm text-forest/70">{d.description}</p>
+              <p className="mt-2 text-sm text-muted">{d.description}</p>
             </div>
           ))}
         </div>

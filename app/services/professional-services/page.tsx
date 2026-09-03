@@ -11,11 +11,11 @@ const pillar = servicePillars.find((p) => p.slug === "professional-services")!;
 export default function ProfessionalServicesPage() {
   return (
     <>
-      <section className="bg-forest text-cream">
+      <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
         <div className="section">
-          <p className="eyebrow text-gold-light">Engineering · {pillar.number}</p>
+          <p className="eyebrow text-gold-light dark:text-forest-dark">Engineering · {pillar.number}</p>
           <h1 className="mt-3 font-heading text-4xl font-semibold">{pillar.title}</h1>
-          <p className="mt-4 max-w-2xl text-cream/80">{pillar.summary}</p>
+          <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/80">{pillar.summary}</p>
         </div>
       </section>
 
@@ -24,7 +24,7 @@ export default function ProfessionalServicesPage() {
           {pillar.items.map((item) => (
             <div key={item.title} className="card">
               <h2 className="font-heading text-lg font-semibold">{item.title}</h2>
-              <p className="mt-2 text-sm text-forest/70">{item.description}</p>
+              <p className="mt-2 text-sm text-muted">{item.description}</p>
             </div>
           ))}
         </div>
