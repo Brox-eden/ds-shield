@@ -19,12 +19,12 @@ export default function SiteHeader({ locale }: { locale: "en" | "ar" }) {
   return (
     <header className="sticky top-0 z-50 border-b border-forest/10 bg-cream/95 backdrop-blur dark:border-gold/20 dark:bg-forest-dark/95">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
-        <Link href={homeHref} className="flex items-center gap-2.5">
-          <Image src="/images/icon.png" alt="" width={64} height={64} priority className="h-9 w-auto dark:hidden sm:h-11" />
-          <Image src="/images/icon-white.png" alt="" width={64} height={64} priority className="hidden h-9 w-auto dark:block sm:h-11" />
+        <Link href={homeHref} className="flex shrink-0 items-center gap-2.5">
+          <Image src="/images/icon.png" alt="" width={64} height={64} priority className="h-9 w-auto shrink-0 dark:hidden sm:h-11" />
+          <Image src="/images/icon-white.png" alt="" width={64} height={64} priority className="hidden h-9 w-auto shrink-0 dark:block sm:h-11" />
           <span className="flex flex-col leading-none">
             <span className="font-heading text-xl font-bold tracking-wide text-gold sm:text-2xl">DSS</span>
-            <span className="mt-1 whitespace-nowrap font-heading text-[8px] font-bold uppercase tracking-[0.13em] text-forest dark:text-cream sm:text-[9px]">
+            <span className="mt-1 whitespace-nowrap font-heading text-[9px] font-bold uppercase tracking-[0.13em] text-forest dark:text-cream sm:text-[10px]">
               {captionText}
             </span>
           </span>
