@@ -14,20 +14,15 @@ export default function SiteHeader({ locale }: { locale: "en" | "ar" }) {
   const homeHref = locale === "ar" ? "/ar" : "/";
   const contactHref = locale === "ar" ? "/ar/contact" : "/contact";
   const bookLabel = locale === "ar" ? "احجز استشارة" : "Book a Consultation";
-  const captionText = locale === "ar" ? "درع الحلول الرقمية" : "Digital Solutions Shield";
+  const logoLight = locale === "ar" ? "/images/logo-full-ar.png" : "/images/logo-full-en.png";
+  const logoDark = locale === "ar" ? "/images/logo-full-ar-dark.png" : "/images/logo-full-en-dark.png";
 
   return (
     <header className="sticky top-0 z-50 border-b border-forest/10 bg-cream/95 backdrop-blur dark:border-gold/20 dark:bg-forest-dark/95">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
-        <Link href={homeHref} className="flex shrink-0 items-center gap-2.5">
-          <Image src="/images/icon.png" alt="" width={64} height={64} priority className="h-9 w-auto shrink-0 dark:hidden sm:h-11" />
-          <Image src="/images/icon-white.png" alt="" width={64} height={64} priority className="hidden h-9 w-auto shrink-0 dark:block sm:h-11" />
-          <span className="flex flex-col leading-none">
-            <span className="font-heading text-xl font-bold tracking-wide text-gold sm:text-2xl">DSS</span>
-            <span className="mt-1 whitespace-nowrap font-heading text-[9px] font-bold uppercase tracking-[0.13em] text-forest dark:text-cream sm:text-[10px]">
-              {captionText}
-            </span>
-          </span>
+        <Link href={homeHref} className="flex shrink-0 items-center">
+          <Image src={logoLight} alt="Digital Solutions Shield" width={500} height={500} priority className="h-16 w-auto shrink-0 dark:hidden sm:h-[4.5rem]" />
+          <Image src={logoDark} alt="Digital Solutions Shield" width={500} height={500} priority className="hidden h-16 w-auto shrink-0 dark:block sm:h-[4.5rem]" />
         </Link>
 
         <nav className="hidden items-center gap-5 lg:gap-7 md:flex">
