@@ -12,7 +12,7 @@ export default function ServicesPage() {
       <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
         <div className="section">
           <p className="eyebrow text-gold-light dark:text-forest-dark">Coverage</p>
-          <h1 className="mt-3 font-heading text-4xl font-semibold">Service Portfolio</h1>
+          <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">Service Portfolio</h1>
           <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/80">
             Advisory, engineering, and now automation: three pillars covering the full path from policy to deployed protection.
           </p>

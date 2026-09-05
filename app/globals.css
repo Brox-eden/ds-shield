@@ -31,7 +31,7 @@ p {
 
 @layer components {
   .section {
-    @apply mx-auto max-w-6xl px-6 py-20 sm:px-8;
+    @apply mx-auto max-w-6xl px-6 py-14 sm:px-8 sm:py-20;
   }
 
   .eyebrow {

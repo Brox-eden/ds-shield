@@ -12,7 +12,7 @@ export default function ContactPage() {
       <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
         <div className="section">
           <p className="eyebrow text-gold-light dark:text-forest-dark">Get in touch</p>
-          <h1 className="mt-3 font-heading text-4xl font-semibold">Book a Consultation</h1>
+          <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">Book a Consultation</h1>
           <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/80">
             Pick a time that works for you below and we&apos;ll confirm your consultation. (An AI
             secretary will handle this step live on the site in a later phase.)

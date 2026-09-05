@@ -1,14 +1,23 @@
-// Central place for site copy, sourced from DSS_Company_Profile_2026.pdf
-// and the brand-and-content-brief.md project doc. Edit here, not in pages.
+// Central place for site copy, sourced from
+// "DS-Shield - التحديث الشامل" (comprehensive content update, Sep 2026).
+// Edit here, not in pages.
 
 export const site = {
   name: "Digital Solutions Shield",
   shortName: "DSS",
   tagline:
-    "A cybersecurity consulting and technology company helping organizations build secure, resilient, and compliant digital environments.",
+    "At DS-Shield, we lead your organization's digital transformation journey from the ground up — starting with infrastructure consulting and engineering, securing your assets to the highest cybersecurity standards, and multiplying your productivity through custom AI solutions.",
   domain: "ds-shield.com",
   email: "info@ds-shield.com",
 };
+
+export const heroTitle = "Your Digital Shield.. Where solid infrastructure meets innovative AI.";
+
+export const valueProposition =
+  "Your digital transformation journey begins with a solid engineering foundation, is guarded by rigorous cybersecurity, and is managed by superior artificial intelligence.";
+
+export const ctaExploreServices = "Explore Our Professional Services";
+export const ctaBookConsultation = "Book a Digital Consultation";
 
 export const vision =
   "To become the trusted advisory and technology shield for secure digital transformation and cyber-asset protection across Saudi Arabia and the region.";
@@ -17,7 +26,7 @@ export const mission =
   "To integrate regulatory alignment, operational efficiency and engineering excellence, strengthening continuity and infrastructure resilience.";
 
 export const about =
-  "Digital Solutions Shield (DSS) is a consulting and technology company specializing in cybersecurity strategy, IT governance and advanced professional services. We enable government and private-sector organizations to build digital infrastructure that is secure, resilient and aligned with the controls that shape their operating environment.";
+  "We are Digital Solutions Shield (DS-Shield), your strategic partner for fully integrated digital transformation in Saudi Arabia. We recognize that today's technical challenges cannot be solved with fragmented solutions — so we combine deep engineering expertise in infrastructure and network design and implementation, leadership in cybersecurity consulting and risk management, and innovation in administrative AI technologies. Our team is led by globally certified experts, ensuring solutions that meet the highest local and international standards.";
 
 export const coreValues = [
   "Professional integrity",
@@ -28,90 +37,108 @@ export const coreValues = [
 
 export const servicePillars = [
   {
-    slug: "consulting-compliance",
+    slug: "professional-services",
     number: "01",
-    title: "Consulting & Compliance",
-    summary: "GRC, policy and risk programs, NCA and international alignment, secure architecture advisory.",
+    title: "Infrastructure Consulting & Professional Services",
+    summary:
+      "We build and develop your organization's technical infrastructure to be a solid, stable foundation for your digital operations, with precise engineering implementation services for complex systems.",
     items: [
       {
-        title: "Governance, Risk & Compliance",
+        title: "Network Design & Engineering (HLD/LLD)",
         description:
-          "Cybersecurity policies and procedures, governance models, and technical and enterprise risk registers.",
+          "Advanced technical designs and planning for upgrades and migrations that ensure high, uninterrupted performance.",
       },
       {
-        title: "NCA Control Alignment",
+        title: "Systems Integration",
         description:
-          "Gap assessment and remediation planning across ECC, CSCC and CCC requirements.",
-      },
-      {
-        title: "International Frameworks",
-        description:
-          "Alignment with NIST CSF 2.0 and ISO/IEC 27001 to strengthen governance and assurance.",
-      },
-      {
-        title: "Secure Architecture",
-        description:
-          "Reference architectures, infrastructure design and Zero Trust frameworks shaped around operating needs.",
+          "Professional setup and installation services for digital infrastructure solutions, and wired/wireless networking for educational, government and other institutions.",
       },
     ],
   },
   {
-    slug: "professional-services",
+    slug: "consulting-compliance",
     number: "02",
-    title: "Professional Services",
-    summary: "Application and web security, identity, PAM and endpoint protection, technical staffing and outsourcing.",
+    title: "Cybersecurity & Risk Consulting",
+    summary:
+      "Comprehensive protection for your digital assets and continuous risk assessment against leading frameworks, so your business keeps running.",
     items: [
       {
-        title: "Application Delivery & Web Security",
+        title: "Compliance",
         description:
-          "LTM/GSLB, web application firewalls, routing and filtering policies designed for resilient delivery.",
+          "Qualifying organizations for full alignment with Saudi NCA controls, applying global frameworks such as NIST CSF 2.0, and preparing for ISO certification.",
       },
       {
-        title: "PAM & Identity Governance",
+        title: "Business Continuity & Disaster Recovery (BCP & DR)",
         description:
-          "Secure-channel policies, privileged-session monitoring and controls that restrict administrative access.",
+          "Designing disaster-recovery strategies and redundancy planning between primary and backup data centers to keep services available during a crisis.",
       },
       {
-        title: "Endpoint Security & EDR/XDR",
+        title: "Enterprise Risk Management",
         description:
-          "Advanced protection policies, malware defense and integration with investigation and response platforms.",
+          "Identifying, analyzing and assessing strategic and operational technology risks, and building proactive treatment plans based on structured methodologies.",
       },
       {
-        title: "Staff Augmentation & Outsourcing",
+        title: "Cybersecurity Policy Development",
         description:
-          "Qualified engineers and consultants for government entities and large enterprises through service contracts and Ajeer-compliant assignments.",
+          "Drafting and developing information-security policies, application controls, endpoint-security policies and email protection.",
       },
     ],
   },
   {
     slug: "ai-automation",
     number: "03",
-    title: "AI Tools & Automation",
-    summary: "n8n-powered AI agents that extend your team, from client-facing assistants to internal workflow automation.",
+    title: "AI & Business Automation",
+    summary:
+      "Speeding up your workflow and cutting operating costs by embedding AI tools into your HR and administrative functions.",
     items: [
       {
-        title: "AI Secretary & Booking Agents",
+        title: "AI Secretarial Assistant",
         description:
-          "A conversational assistant that answers visitor questions and books consultations straight into your calendar. It's the same kind of agent that will run behind the scenes on this site once it's live.",
+          "AI tools for drafting correspondence, summarizing complex technical and administrative documents, and organizing tasks efficiently.",
       },
       {
-        title: "HR & Internal Specialist Agents",
+        title: "HR Automation",
         description:
-          "Agents that handle first-line HR questions, onboarding steps and internal requests, freeing your team from repetitive tickets.",
+          "Smart systems that analyze and match CVs against job requirements with precision, cutting the time and effort spent on recruitment.",
       },
       {
-        title: "Workflow & Integration Automation",
+        title: "Internal AI Chatbots",
         description:
-          "n8n workflows that connect your existing tools (CRM, calendar, ticketing, email) so information moves without manual handoffs.",
+          "Solutions that give employees instant answers to questions about internal policies and procedures.",
       },
       {
-        title: "Custom Agent Design",
+        title: "Specialized Model Development",
         description:
-          "Scoped, built and deployed around the specific process you want automated, not a one-size-fits-all bot.",
+          "Consulting on integrating generative AI and large language models into your organization's environment, securely and privately.",
       },
     ],
-    note:
-      "This is a new service line. The live demo (the AI secretary on this site) is coming in a later phase. This page describes what we build.",
+  },
+];
+
+export const methodology = [
+  {
+    number: "01",
+    title: "Assessment",
+    description:
+      "Studying the organization's current state, analyzing gaps, and precisely defining technical and security requirements.",
+  },
+  {
+    number: "02",
+    title: "Architecture Design",
+    description:
+      "Building detailed HLD & LLD designs and selecting the best-fit network and cybersecurity technologies.",
+  },
+  {
+    number: "03",
+    title: "Implementation",
+    description:
+      "Deploying solutions through our professional services teams to ensure a smooth transition without disrupting operations.",
+  },
+  {
+    number: "04",
+    title: "Knowledge Transfer",
+    description:
+      "Enabling your internal team to manage the new systems and solutions efficiently and with strong security awareness.",
   },
 ];
 
@@ -137,23 +164,18 @@ export const engagementModels = [
 export const differentiators = [
   {
     number: "01",
-    title: "Local regulatory alignment",
-    description: "Working knowledge of NCA controls and the realities of Saudi operating environments.",
+    title: "Local Expertise, Global Vision",
+    description: "A deep understanding of the Saudi market's requirements and local regulations, combined with the application of international best practices.",
   },
   {
     number: "02",
-    title: "Advisory-to-engineering continuity",
-    description: "The same outcome remains visible from policy and architecture through configuration and validation.",
+    title: "Certified Expertise",
+    description: "Our team includes consultants holding senior professional certifications in information security, risk management and IT governance (such as CISM, CRISC and CGEIT), backed by advanced academic experience.",
   },
   {
     number: "03",
-    title: "Operational practicality",
-    description: "Recommendations are designed to work with teams, systems and delivery constraints, not only on paper.",
-  },
-  {
-    number: "04",
-    title: "Flexible specialist capacity",
-    description: "Project delivery, recurring advisory and embedded experts under clear contractual models.",
+    title: "End-to-End Solutions",
+    description: "We don't cover just one side of the equation — we bring together infrastructure stability, cybersecurity resilience and AI innovation in one cohesive package.",
   },
 ];
 

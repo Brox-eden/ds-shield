@@ -2,10 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   about,
+  ctaBookConsultation,
+  ctaExploreServices,
   differentiators,
+  heroTitle,
   mission,
   servicePillars,
   site,
+  valueProposition,
   vision,
 } from "@/lib/content";
 
@@ -17,16 +21,16 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-24 sm:px-8 md:grid-cols-2 md:items-center md:py-32">
           <div>
             <p className="eyebrow text-gold-light dark:text-forest-dark">Cybersecurity · Technology · Professional Services</p>
-            <h1 className="mt-4 font-heading text-4xl font-semibold leading-tight sm:text-5xl">
-              Building secure, resilient digital infrastructure for government and enterprise.
+            <h1 className="mt-4 font-heading text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
+              {heroTitle}
             </h1>
             <p className="mt-6 max-w-xl text-cream/80 dark:text-forest-dark/80">{site.tagline}</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/contact" className="btn-primary bg-gold text-forest hover:bg-gold-light dark:bg-forest-dark dark:text-cream dark:hover:bg-forest">
-                Book a Consultation
+                {ctaBookConsultation}
               </Link>
               <Link href="/services" className="btn-secondary border-cream text-cream hover:bg-cream hover:text-forest dark:border-forest-dark dark:text-forest-dark dark:hover:bg-forest-dark dark:hover:text-gold">
-                Explore Services
+                {ctaExploreServices}
               </Link>
             </div>
           </div>
@@ -41,6 +45,13 @@ export default function Home() {
             />
           </div>
         </div>
+      </section>
+
+      {/* VALUE PROPOSITION */}
+      <section className="section !py-12 text-center">
+        <p className="mx-auto max-w-3xl font-heading text-xl font-medium italic text-forest/90 dark:text-cream/90 sm:text-2xl">
+          &ldquo;{valueProposition}&rdquo;
+        </p>
       </section>
 
       {/* ABOUT SUMMARY */}
